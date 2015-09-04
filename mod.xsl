@@ -5,7 +5,7 @@
     <div class="J_OXMod oxmod-oxm-test" ox-mod="oxm-test">
 
       <h1>
-        This is mod oxm-test;
+        This <font color="red">is</font> mod oxm-test;
       </h1>
       </div>
     </xsl:template>
