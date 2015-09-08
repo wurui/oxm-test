@@ -18,7 +18,9 @@
 
 
         <div class="layout">
-          <xsl:call-template name="oxm-test" />
+          <xsl:call-template name="oxm-test">
+                  <xsl:with-param name="title">888</xsl:with-param>
+          </xsl:call-template>
         </div>
 
       </body>

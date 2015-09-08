@@ -3,14 +3,14 @@
     <xsl:template match="/root" name="oxm-test">
         <xsl:param name="url"  comment="link url"/>
         <xsl:param name="counter" pattern="\d{2,8}" comment="link url"/>
-        <xsl:param name="title" comment="title of the link"/>
+        <xsl:param name="title" comment="title of the link">title</xsl:param>
         <!-- className 'J_OXMod' required  -->
         <div class="J_OXMod oxmod-oxm-test" ox-mod="oxm-test">
             <param>123</param>
             <h1>
                 This <font color="red">is</font> mod oxm-test;
             </h1>
-            <a href="$url">$title</a>
+            <a href="$url"><xsl:value-of select="$title"/></a>
             <h3>
                 counter:<xsl:value-of select="$counter"/>
             </h3>
