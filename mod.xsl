@@ -10,8 +10,10 @@
             <h1>
                 This <font color="red">is</font> mod oxm-test;
             </h1>
-            <a href="$url"><xsl:value-of select="$title"/></a>
+
             <h3>
+                link:<a href="{$url}"><xsl:value-of select="$title"/></a>
+                <br/>
                 counter:<xsl:value-of select="$counter"/>
             </h3>
         </div>
