@@ -1,3 +1,10 @@
-.oxmod-oxm-test{
-/* CSS */
- }
+.oxmod-oxm-test {
+  /* CSS */
+}
+.oxmod-oxm-test ul,
+.oxmod-oxm-test li {
+  list-style: decimal;
+}
+.oxmod-oxm-test .list img {
+  width: 200px;
+}
