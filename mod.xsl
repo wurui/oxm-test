@@ -19,14 +19,13 @@
             </h3>
             <h3>TEMai List;count:<xsl:value-of select="count(data/temai/items/i)"/></h3>
             <ul>
-                <xsl:for-each select="data/temai/items/i[position() &lt;= 10]">
+                <xsl:for-each select="data/temai/items/i[position() &lt;= 3]">
 
                     <li class="list">
                         <a href="{itemUrl}">
                             <img src="{picUrlTms}" />
                             <br/><xsl:value-of select="shortNameTms" />
                         </a>
-
                     </li>
 
                 </xsl:for-each>
