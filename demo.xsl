@@ -11,7 +11,7 @@
         <title>oxm-test Demo</title>
 
         <link rel="stylesheet" type="text/css" href="asset/index.css" />
-        <script data-main="asset/index.js" src="http://openxsl.com/js/require.js"></script>
+        <script src="http://openxsl.com/js/require.js"></script>
 
       </head>
       <body>
@@ -22,6 +22,19 @@
                   <xsl:with-param name="title">888</xsl:with-param>
           </xsl:call-template>
         </div>
+        <script>
+          require.config({
+          paths: {
+          jquery: 'http://openxsl.com/js/jquery',
+          mustache: 'http://openxsl.com/js/mustache'
+          }
+          });
+
+          require(['asset/index'],function(Mod){
+          Mod.init($('.J_OXMod'));
+
+          })
+        </script>
 
       </body>
 
