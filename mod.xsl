@@ -7,7 +7,7 @@
 
         <!-- className 'J_OXMod' required  -->
         <div class="J_OXMod oxmod-oxm-test" ox-mod="oxm-test">
-            <param>param tag 1</param>
+            <param>param tag 2</param>
             <h1>
                 This <font color="red">is</font> mod oxm-test;
             </h1>
